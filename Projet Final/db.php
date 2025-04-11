@@ -13,10 +13,10 @@ try {
     // Ajout d'utilisateur
     if (isset($_POST["lastName"])) {
         if (!empty($_POST["lastName"]) && !empty($_POST["firstName"]) && !empty($_POST["mail"]) && !empty($_POST["zipCode"])) {
-            $lastName = $_POST["lastName"];
-            $firstName = $_POST["firstName"];
-            $mail = $_POST["mail"];
-            $zipCode = $_POST["zipCode"];
+            $lastName = htmlspecialchars($_POST["lastName"]);
+            $firstName = htmlspecialchars($_POST["firstName"]);
+            $mail = htmlspecialchars($_POST["mail"]);
+            $zipCode = htmlspecialchars($_POST["zipCode"]);
             $db->beginTransaction();
             $createNewUser = $db->prepare('INSERT INTO user (lastName, firstName, mail, zipCode) VALUES (:lastName, :firstName, :mail, :zipCode)');
             $createNewUser->bindParam(":lastName", $lastName);
@@ -46,12 +46,12 @@ try {
     if (isset($_POST['edit']) && isset($_POST['id'])) {
         if (!empty($_POST["editLastName"]) && !empty($_POST["editFirstName"]) && !empty($_POST["editMail"]) && !empty($_POST["editZipCode"])) {
 
-            $id = (int)$_POST['id'];
+            $id = (int)htmlspecialchars($_POST['id']);
 
-            $lastName = $_POST["editLastName"];
-            $firstName = $_POST["editFirstName"];
-            $mail = $_POST["editMail"];
-            $zipCode = $_POST["editZipCode"];
+            $lastName = htmlspecialchars($_POST["editLastName"]);
+            $firstName = htmlspecialchars($_POST["editFirstName"]);
+            $mail = htmlspecialchars($_POST["editMail"]);
+            $zipCode = htmlspecialchars($_POST["editZipCode"]);
 
             $db->beginTransaction();
 
@@ -65,7 +65,6 @@ try {
 
             $db->commit();
             header("Refresh:0");
-
         } else $error = "Veuillez ne pas laisser de champ vide";
     }
 } catch (Exception $e) {
