@@ -1,0 +1,40 @@
+*{
+    font-family: "Montserrat";
+    box-sizing: border-box;
+}
+#conversation{
+    width:800px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    box-shadow: 0 0 3px #11111188;
+    padding:1rem;
+    border-radius:20px;
+
+    .user1{
+        justify-self: flex-start;
+    }
+    .user2{
+        align-self: flex-end;
+    }
+
+    .message{
+        display:flex;
+    }
+
+    img{
+        width:30px;
+        height:30px;
+    }
+}
+
+form{
+    margin:20px auto;
+    width:800px;
+
+    textarea{
+        width: 100%;
+        border-radius:10px;
+    }
+}

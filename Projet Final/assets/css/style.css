@@ -1,0 +1,211 @@
+@font-face {
+    font-family: "catcafe";
+    src: url(../fonts/catcafe.ttf);
+}
+
+@font-face {
+    font-family: "orientalcat";
+    src: url(../fonts/orientalcat.otf);
+}
+
+body {
+    background-color: #ececec;
+}
+
+h1 {
+    font-family: "orientalcat";
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-family: "orientalcat";
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.user-list {
+    margin-top: 70px;
+}
+
+table {
+    width: 95%;
+    margin: 20px auto;
+    font-family: "catcafe";
+    font-size: 22px;
+
+    th,
+    td {
+        padding: 20px 30px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #077c4f;
+        color: white;
+    }
+
+    td {
+        background-color: #c3dad1b4;
+    }
+
+    tr:nth-child(even) td {
+        background-color: #d4e6dfb4;
+    }
+
+    td:nth-child(1),
+    th:nth-child(1) {
+        width: 20%;
+    }
+
+    td:nth-child(2),
+    th:nth-child(2) {
+        width: 20%;
+    }
+
+    td:nth-child(3),
+    th:nth-child(3) {
+        width: 30%;
+    }
+
+    td:nth-child(4),
+    th:nth-child(4) {
+        width: 10%;
+    }
+
+    td:nth-child(5),
+    th:nth-child(5) {
+        width: 10%;
+    }
+}
+
+button {
+    text-align: center;
+}
+
+.border {
+    border: 1px solid #ddd;
+}
+
+.form-container {
+    background-color: #fdfdfd;
+    border: 2px solid #077c4f;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+
+    input,
+    button {
+        width: 100%;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background-color: #077c4f;
+        color: white;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        justify-content: center;
+    }
+
+    button:hover {
+        background-color: #055e3c;
+    }
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background-color: white;
+    border: 2px solid #46be90;
+    border-radius: 15px;
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .modal-buttons {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 10px;
+    }
+
+    input,
+    button {
+        width: 100%;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        background-color: #077c4f;
+        color: white;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    button:hover {
+        background-color: #055e3c;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    input,
+    button {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        background-color: #60ddad;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #39b887;
+    }
+}

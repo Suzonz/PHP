@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "aroundcat";
+    src: url(../fonts/aroundcat.ttf)
+}
+
+@font-face {
+    font-family: "catcafe";
+    src: url(../fonts/catcafe.ttf);
+}
+
+@font-face {
+    font-family: "drawncat";
+    src: url(../fonts/drawncat.ttf);
+}
+
+@font-face {
+    font-family: "orientalcat";
+    src: url(../fonts/orientalcat.otf);
+}
+
+@font-face {
+    font-family: "simplecat";
+    src: url(../fonts/simplecat.otf);
+}
+
+h1 {
+    font-family: "orientalcat";
+    text-align: center;
+    font-size: 60px;
+}
+
+.row {
+
+    display: flex;
+}
+
+.case {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grille {
+    background-image: url('../image/grass3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 10px;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.middle-arrows {
+    display: flex;
+    gap: 70px;
+}
+
+#direction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#retry {
+    display: flex;
+    justify-self: center;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+#grille,
+#direction {
+    margin: 20px;
+}
+
+#boutons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+
+
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-image: url('../image/background.jpg');
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px black;
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    h2 {
+        font-family: "aroundcat";
+        font-size: 40px;
+        margin-top: 0;
+    }
+
+    p {
+        font-family: "orientalcat";
+        font-weight: 900;
+        font-size: 40px;
+        margin: 20px;
+
+    }
+
+    button {
+        background-color: black;
+        color: rgb(240, 154, 26);
+        outline: none;
+        margin: 5px;
+        padding: 0;
+        border-radius: 10px;
+
+    }
+    .chat-girl{
+        margin-top: 50px;
+    }
+
+}

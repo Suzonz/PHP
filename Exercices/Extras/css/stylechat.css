@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "catCafe";
+    src: url(../font/catcafe.ttf);
+}
+
+@font-face {
+    font-family: "orientalCat";
+    src: url(../font/orientalcat.otf);
+}
+
+@font-face {
+    font-family: "drawncat";
+    src: url(../font/drawncat.ttf);
+}
+
+@font-face {
+    font-family: "simplecat";
+    src: url(../font/simplecat.otf);
+}
+
+@font-face {
+    font-family: "aroundcat";
+    src: url(../font/aroundcat.ttf);
+}
+
+body {
+    background-color: rgb(5, 95, 68);
+    color: rgb(146, 199, 188);
+}
+
+h1 {
+    font-family: "orientalCat";
+    text-align: center;
+    font-size: 80px;
+}
+
+form {
+    font-family: "orientalCat";
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0 30%;
+    padding-top: 20px;
+    border: solid black 1px;
+    border-radius: 20px;
+    background-color: rgb(11, 63, 47);
+    min-height: 400px;
+    padding-right: 20px;
+
+    .left{
+    align-self: flex-start;
+    }
+
+    .right{
+        align-self: flex-end;
+        }
+}
+
+textarea {
+    font-size: 30px;
+    height: 40px;
+    font-family: "catCafe";
+    border-radius: 15px;
+}
+
+.input{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+
+button {
+    font-family: "orientalCat";
+    font-weight: 600;
+    color: rgb(5, 95, 68);
+    font-size: 30px;
+    border-radius: 15px;
+
+}
+
+p {
+    font-size: 30px;
+    font-family: "catCafe";
+    border: solid black 1px;
+    border-radius: 7px;
+    padding: 4px 10px;
+    background-color: rgb(200, 207, 206);
+    color: rgb(28, 102, 80);
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    margin-right: 15px;
+    max-width: 50%;
+    margin-top: 0;
+
+    /* Pour permettre le retour à la ligne */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+
+    /* Supprime le flexbox pour éviter les conflits */
+    display: block;
+}
+
+.boutons{
+display: flex;
+align-items: center;    
+padding: 10px;
+gap: 3px;
+}
+
+.delete {
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+    width: 20px;
+}
